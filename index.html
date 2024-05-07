@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>602 LORE</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+
+    
+    display: flex;
+    align-items: center;
+        }
+.container {
+    text-align: center;
+}
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .link-item {
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .link-item a {
+            text-decoration: none;
+            color: #333; 
+            text-size-adjust: 200;
+        }
+
+        .link-item a:hover {
+            color: #0800ff;
+        }
+
+        .link-item img {
+            max-width: 80%;
+            height: 300;
+            border-radius: 5px;
+        }
+
+        .esquina-superior-izquierda {
+    position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px; /* Ancho deseado de la imagen */
+            height: 90; /* Para mantener la proporción de la imagen */
+            z-index: 999; /* Asegura que la imagen esté por encima de otros elementos */
+}
+.notificacion {
+            background-color: #a4a4a4;
+            border: 2px solid #333232;
+            color: #333;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .cerrar {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cerrar:hover {
+            color: black;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .notificacion {
+            background-color: #f2f2f2;
+            border: 2px solid #ddd;
+            color: #333;
+            padding: 25px;
+            margin-top: 70px;
+            display: none;
+            position: absolute;
+            top: 0;
+        }
+
+        .cerrar {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cerrar:hover {
+            color: black;
+        }
+
+
+        .boton-llamativo1 {
+        background-color: #f9e10d; /* Color de fondo */
+        border: none;
+        color: white; /* Color del texto */
+        padding: 10px 20px; /* Tamaño del botón */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px; /* Borde redondeado */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    }
+
+    /* Cambiar el color del botón al pasar el ratón por encima */
+    .boton-llamativo1:hover {
+        background-color: #b78a03; /* Nuevo color de fondo al pasar el ratón */
+    }
+        
+
+    
+        .boton-llamativo2 {
+            background-color: #8e8e8e; /* Color de fondo */
+            border: none;
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #404040; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+    
+        .boton-llamativo3 {
+            background-color: #00c31a; /* Color de fondo */
+            border: none;
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #018103; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+    
+        .boton-llamativo4 {
+            background-color: #fa0202; /* Color de fondo */
+            border: none;
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #810000; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+    
+        .boton-llamativo5 {
+            background-color: #840202; /* Color de fondo */
+            border: none;
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #3e0300; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+        .boton-llamativo6 {
+            background-color: #ffa20b; /* Color de fondo */
+            border: none;
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #834400; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+        .boton-llamativo7 {
+            background-color: #ff7ad9; /* Color de fondo */
+            border: none;
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #a04790; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+        .boton-llamativo8 {
+            background-color: #c20df9; /* Color de fondo */
+            border: none;
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #66016b; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+        .boton-llamativo9 {
+            background-color: #007fa2; /* Color de fondo */
+            border: none;
+            color: rgb(255, 254, 254); /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+        }
+
+        /* Cambiar el color del botón al pasar el ratón por encima */
+        .boton-llamativo:hover {
+            background-color: #00525b; /* Nuevo color de fondo al pasar el ratón */
+        }
+
+    </style>
+    </style>
+</head>
+<body>
+    <div id="notificacion" class="notificacion">
+        <span class="cerrar" onclick="cerrarNotificacion()">&times;</span>
+        <strong>¡Bienvenido!</strong>   Esta plataforma digital, cuya creación ha sido concebida mediante el consenso pleno de todos los individuos participantes. Es imperativo señalar que el contenido de esta página se ha modelado con fines satíricos, y en ningún caso se debe percibir como verídico o representativo de la realidad. Agradecemos su comprensión y le animamos a disfrutar del humor y la ironía que se despliegan en este espacio virtual.
+    </div>
+       
+        <script>
+            // Función para cerrar la notificación
+            function cerrarNotificacion() {
+                document.getElementById("notificacion").style.display = "none";
+            }
+    
+            // Mostrar la notificación al cargar la página
+            window.onload = function() {
+                document.getElementById("notificacion").style.display = "block";
+            };
+        </script>
+
+    </div>
+    <img src="ASSETS/IMG_7111.jpg" alt="Imagen" class="esquina-superior-izquierda" width="90" height="90">
+
+    <div class="container">
+        <h1> PERSONAJES DEL 602 </h1>
+        <div class="link-container">
+            <div class="link-item">
+                    <img src="ASSETS/3CF7F4F9-C4BE-49A8-9149-25D870FEC078.jpeg" alt="LORE DE MARCELO" width="300" height="200">
+                    <a href="index2.html" class="boton-llamativo1"> MARCELO </a>
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="./index3.html">
+                    <img src="ASSETS/9e45419b-fd27-4ab6-88b9-c3135893c4bc.jpg" alt="LORE DE LECHES" width="300" height="200">
+                    <a href="index3.html" class="boton-llamativo2">LECHES</a>
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="./index4.html">
+                    <img src="ASSETS/49F97C02-23D6-4354-8CF0-6351F354A6C5.jpg"alt="LORE DE ANGEL" width="300" height="200">
+                    <a href="index4.html" class="boton-llamativo3">ANGEL</a>
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="./index5.html">
+                    <img src="ASSETS/IMG_1174.jpeg" alt="LORE DE SEBASTIAN" width="300" height="200">
+                    <a href="index5.html" class="boton-llamativo4">SEBASTIAN</a>
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="./index6.html">
+                    <img src="ASSETS/8F6918C7-DBCF-43EF-A19E-A7EEF8A01999.jpg"  alt="LORE DE CLAUDIO" width="300" height="200">
+                    <a href="index6.html" class="boton-llamativo5">CLAUDIO</a>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <a href="./index7.html">
+                    <img src="ASSETS/6fc81cce-822d-4b4b-9644-eeff1c4a89ab (2).jpg"  alt="LORE DE CESAR" width="300" height="200">
+                    <a href="index7.html" class="boton-llamativo6">CESAR</a>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <a href="./index8.html">
+                    <img src="ASSETS/9c25b97e-e306-48ce-ad4b-62c320ea7ff6 (1).jpg"  alt="LORE DE ROBERTO" width="300" height="200">
+                    <a href="index8.html" class="boton-llamativo7">ROBERTO</a>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <a href="./index9.html">
+                    <img src="ASSETS/d7d3c8c5-0200-4bb9-a015-923990284792.jpg"  alt="LORE DE GENEY" width="300" height="200">
+                    <a href="index9.html" class="boton-llamativo8">GENEY</a>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <a href="./index10.html">
+                    <img src="ASSETS/IMG_7195.jpg"  alt="LORE DE ANDRE" width="300" height="200">
+                    <a href="index10.html" class="boton-llamativo9">ANDRE</a>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <img src="ASSETS/Tabla General de borrachos fc.jpg" alt="Imagen" style="display: block; margin: 0 auto;" width="1100" height="1100">
+    </div>
+
+</body>
+
+</html>
